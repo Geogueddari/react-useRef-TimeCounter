@@ -1,0 +1,49 @@
+.counter-container{
+    border: 5px solid rgb(101, 100, 100);
+    width: 90%;
+    height: 70%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 40px 10px rgb(101, 100, 100);
+    display: grid;
+    grid-template-areas: "time" "actions";
+    place-items: center;
+}
+.time{
+    grid-area: time;
+    font-family:monospace;
+    font-size: 80px;
+    font-weight: bold;
+}
+.actions{
+    grid-area: actions;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "start stop reset";
+}
+.start-button , .stop-button , .reset-button{
+    margin: 30px;
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.15ms ease;
+}
+.start-button:hover , .stop-button:hover , .reset-button:hover{
+    opacity: 0.8;
+}
+.start-button{
+    grid-area: start;
+    background-color: rgb(4, 188, 4);
+}
+.stop-button{
+    grid-area: stop;
+    background-color: rgb(250, 5, 5);
+}
+.reset-button{
+    grid-area: reset;
+    background-color: rgb(3, 155, 231);
+}
